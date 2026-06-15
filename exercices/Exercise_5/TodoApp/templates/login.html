@@ -1,0 +1,22 @@
+{% include "layout.html" %}
+<div class="container">
+    <div class="card">
+        <data class="card-header">Login</data>
+        <div class="card-body">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" autocomplete="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" autocomplete="current-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <p>Don't have an account? <a href="/auth/register-page">Register here</a>.</p>
+        </div>
+    </div>
+</div>
